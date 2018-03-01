@@ -105,10 +105,15 @@ class LightTargetControlView: NSView {
 
 		let brightnessMenu = addSubmenu("Brightness", mainMenu: mainMenu)
 		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent100)))
+		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent90)))
 		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent80)))
+		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent70)))
 		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent60)))
+		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent50)))
 		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent40)))
+		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent30)))
 		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent20)))
+		brightnessMenu.addItem(brightnessItemFor(BrightnessMap.valueForKey(.percent10)))
 
 		let whitesMenu = addSubmenu("Whites", mainMenu: mainMenu)
         whitesMenu.addItem(colorItemFor(ColorMap.valueForKey(.ultraWarm)))
